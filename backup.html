@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style>
+    *
+{
+    margin: 0;
+    padding: 0;
+    
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.slider
+{
+    height: 400px;
+    width: 70%;
+
+    margin: auto;
+    margin-top:100px ;
+    position: relative;
+    box-shadow: 2px 2px 20px magenta;
+    
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.nav
+{
+    position: absolute;
+    top: 55px;
+    left: 45%;
+
+}
+
+.pic img
+{   
+    height: 100%;
+    width: 100%;
+    transition: 2s;
+    
+}
+</style>
+<body>
+    <div class="slider">
+
+        <div  class="nav">
+            <!--radio-->
+            <input type="radio" name="radio-btn"    id="raido1">
+            <input type="radio" name="radio-btn"    id="raido2">
+            <input type="radio" name="radio-btn"    id="raido3">
+            <input type="radio" name="radio-btn"    id="raido4">
+        </div>
+        
+            <div class="pic"><img src="images/luca-vFrhuBvI-hI-unsplash.jpg" alt=""></div>
+            <div class="pic"> <img src="images/geran-de-klerk-OomNPPv1Rpk-unsplash.jpg" alt="" class="slide"></div>
+            <div class="pic"><img src="images/pexels-arnie-chou-1229042.jpg" alt="" class="slide"></div>
+            <div class="pic"><img src="images/rainbow-man-minimalist-laptop-art-1p9vdq8rubyu283o.jpg" alt="" class="slide"></div>
+           
+            
+            
+            
+        
+    
+                <!--manual-->
+                <div class="manual">
+                    <label for="raido1" class="manual-btn"></label>
+                    <label for="raido2" class="manual-btn"></label>
+                    <label for="raido3" class="manual-btn"></label>
+                    <label for="raido4" class="manual-btn"></label>
+                </div>
+                </div>
+</body>
+</html>
+
